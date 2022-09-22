@@ -33,6 +33,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/mur-m/OneDrive/Documents/Numerical analysis/Lab/NumericalAnalysisLab/build/x64-debug/_deps/sfml-build/lib/sfml-audio-s-d.lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/mur-m/OneDrive/Documents/Numerical analysis/Lab/NumericalAnalysisLab/build/x64-debug/_deps/sfml-build/lib/sfml-audio-d.lib")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xbinx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/mur-m/OneDrive/Documents/Numerical analysis/Lab/NumericalAnalysisLab/build/x64-debug/_deps/sfml-build/lib/sfml-audio-d-2.dll")
 endif()
 
