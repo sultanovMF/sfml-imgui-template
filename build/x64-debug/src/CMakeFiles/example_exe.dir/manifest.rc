@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/mur-m/OneDrive/Documents/Numerical analysis/Lab/NumericalAnalysisLab/build/x64-debug/src/CMakeFiles/example_exe.dir/embed.manifest"
